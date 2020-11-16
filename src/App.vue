@@ -47,8 +47,9 @@ import User from './services/usuarios'
 
     mounted(){
       User.listar().then(resposta => {
-        //console.log(resposta.data)
-        this.users = resposta.data
+        console.log("teste")
+        console.log(resposta.data.users)
+        this.users = resposta.data.users
         
       }) 
 
